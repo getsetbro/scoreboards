@@ -1,0 +1,103 @@
+body {
+  background: #2c2c2c url("crosshatch-dark.png") repeat;
+}
+@font-face {
+  font-family: "scoreboard-webfont";
+  src: url("scoreboard-webfont.eot");
+  src: url("scoreboard-webfont.eot?#iefix") format("embedded-opentype"),
+    url("scoreboard-webfont.woff") format("woff"),
+    url("scoreboard-webfont.ttf") format("truetype"),
+    url("scoreboard-webfont.svg#webfont") format("svg");
+}
+.lsb-brand {
+  color: #ccc;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lsb-sb {
+  text-align: center;
+  color: #fff;
+  padding: 30px 0 20px 0;
+  zoom: 1;
+  overflow: hidden;
+  background-color: #111;
+  border-radius: 5px;
+  border: 1px solid #333;
+  box-shadow: inset 0 0 5px 2px #000;
+}
+.lsb-50 {
+  width: 50%;
+  float: left;
+}
+.lsb-sb:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  height: 0;
+}
+.lsb-sb b {
+  text-transform: uppercase;
+}
+.addone {
+  font-size: 30px;
+  vertical-align: top;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#addone1,
+.Set {
+  color: #eb1c23;
+  text-transform: uppercase;
+}
+#addone2,
+.Mat {
+  color: #25a9df;
+  text-transform: uppercase;
+}
+.lsb-nums {
+  font: 88px/88px "scoreboard-webfont";
+  width: 94px;
+  margin: 0 auto;
+  text-align: right;
+  color: #ffff32;
+  position: relative;
+  z-index: 1;
+}
+.lsb-nums:before {
+  position: absolute;
+  content: "22";
+  color: #292927;
+  z-index: -1;
+  right: 0;
+}
+.lsb-nums:after {
+  position: absolute;
+  content: "44";
+  color: #292927;
+  z-index: -1;
+  right: 0;
+}
+#lsb-tbl {
+  color: #ccc;
+  background-color: #111;
+  border-radius: 5px;
+  border: 1px solid #333;
+  box-shadow: inset 0 0 5px 2px #000;
+}
+#lsb-tbl th,
+#lsb-tbl td {
+  border-color: #222;
+}
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border: 1px solid #333;
+  background-color: #111;
+}
